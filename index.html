@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialBook</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/41066d821e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="images/logo.png" class="logo" alt="logo">
+            <ul>
+                <li><img src="images/notification.png" alt="notification"></li>
+                <li><img src="images/inbox.png" alt="inbox"></li>
+                <li><img src="images/video.png" alt="video"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="images/search.png" alt="Search">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settigsMenueToggle()" >
+                <img src="images/profile-pic.png" alt="profile-pic">
+            </div>
+        </div>
+
+        <!-- settings --------  -->
+        <div class="settings-menue">
+            <div id="dark-btn"  onclick="toggleDarkBtn()">
+                <span></span>
+            </div>
+            <div class="settings-menue-inner">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="">
+                    <div>
+                        <p>Amr Mohsen</p>
+                        <a href="#">See Your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png" alt="">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to Improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img src="images/setting.png" class="setting-icons" alt="">
+                    <a href="#">Settings & Privacy <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/help.png" class="setting-icons" alt="">
+                    <a href="#">Help And Support<img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/display.png" class="setting-icons" alt="">
+                    <a href="#">Dipslay & Accessiplty<img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/logout.png" class="setting-icons" alt="">
+                    <a href="#">Logout<img src="images/arrow.png" width="10px"></a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- left sidebar ------------------------------------- -->
+        <div class="left-side-bar">
+            <div class="imp-links">
+                <a href="#"><img src="images/news.png" alt="news">Latest News</a>
+                <a href="#"><img src="images/friends.png" alt="friends">Friends</a>
+                <a href="#"><img src="images/group.png" alt="group">Group</a>
+                <a href="#"><img src="images/marketplace.png" alt="marketplace">Marketplace</a>
+                <a href="#"><img src="images/watch.png" alt="watch">watch</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="images/shortcut-1.png" alt=""> Web Developers</a>
+                <a href="#"><img src="images/shortcut-2.png" alt=""> Web Design Course</a>
+                <a href="#"><img src="images/shortcut-3.png" alt=""> Full Stack Development</a>
+                <a href="#"><img src="images/shortcut-4.png" alt=""> Websites Expert</a>
+            </div>
+        </div>
+
+        <!-- mian content------------------------------------- -->
+
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png" alt="">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-1.png" alt="">
+                    <p>Amr Mohsen</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.png" alt="">
+                    <p>Kareem Mohsen</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.png" alt="">
+                    <p>Khaled Moshen</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.png" alt="">
+                    <p>Khaled Moshen</p>
+                </div>
+            </div>
+
+            <!-- write post container ----------------  -->
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="">
+                    <div>
+                        <p>Amr Mohsen</p>
+                        <small>Public <i class="fas fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <!-- post input container ---------  -->
+                <div class="post-input-container">
+                    <textarea rows="2" placeholder="What's on your mind ? , Amr"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="images/live-video.png" alt="">Live video</a>
+                        <a href="#"><img src="images/photo.png" alt="">Photo video</a>
+                        <a href="#"><img src="images/feeling.png" alt="">feeling activity</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- post container--------------  -->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="">
+                        <div>
+                            <p>Amr Mohsen</p>
+                            <span>June 24 2021,13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">hello there please Subscribe <span>@amrmohsen </span> github profile <a
+                        href="#">#Github</a> <a href="#">#Amr Mohsen</a></p>
+                <img src="images/feed-image-1.png" class="post-img" alt="feed-image-1">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png" alt="like"> 120</div>
+                        <div><img src="images/comments.png" alt="comments"> 250</div>
+                        <div><img src="images/share.png" alt="share"> 45</div>
+
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png" alt="">
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- post container 2--------------  -->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/member-2.png" alt="">
+                        <div>
+                            <p>Kareem Mohsen</p>
+                            <span>April 28 2021,13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas necessitatibus at,
+                    obcaecati minus eveniet nesciunt quaerat explicabo consectetur atque, deserunt optio fuga dolorum
+                    dolore voluptatem tempore, dolor vel ad beatae. <span>@amrmohsen </span> github profile <a
+                        href="#">#Github</a> <a href="#">#Amr Mohsen</a></p>
+                <img src="images/feed-image-2.png" class="post-img" alt="feed-image-1">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png" alt="like"> 120</div>
+                        <div><img src="images/comments.png" alt="comments"> 250</div>
+                        <div><img src="images/share.png" alt="share"> 45</div>
+
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png" alt="">
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- post container 3--------------  -->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/member-3.png" alt="">
+                        <div>
+                            <p>Kareem Mohsen</p>
+                            <span>November 28 2021,13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas necessitatibus at,
+                    obcaecati minus eveniet nesciunt quaerat explicabo consectetur atque, deserunt optio fuga dolorum
+                    dolore voluptatem tempore, dolor vel ad beatae.Lorem ipsum dolor, sit amet consectetur adipisicing
+                    elit. Quas necessitatibus at,
+                    obcaecati minus eveniet nesciunt quaerat explicabo consectetur atque, deserunt optio fuga dolorum
+                    dolore voluptatem tempore, dolor vel ad beataeLorem ipsum dolor, sit amet consectetur adipisicing
+                    elit. Quas necessitatibus at,
+                    obcaecati minus eveniet nesciunt quaerat explicabo consectetur atque, deserunt optio fuga dolorum
+                    dolore voluptatem tempore, dolor vel ad beatae <span>@amrmohsen </span> github profile <a
+                        href="#">#Github</a> <a href="#">#Amr Mohsen</a></p>
+                <img src="images/feed-image-3.png" class="post-img" alt="feed-image-1">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png" alt="like"> 120</div>
+                        <div><img src="images/comments.png" alt="comments"> 250</div>
+                        <div><img src="images/share.png" alt="share"> 45</div>
+
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png" alt="">
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+
+                <!-- load more btn  -->
+
+            </div>
+            <button type="button" class="load-more">Load More</button>
+
+        </div>
+        <!-- Right sidebar------------------------------------- -->
+
+        <div class="right-side-bar">
+            <div class="side-bar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social media</h4>
+                    <p> <i class="fas fa-map-marker-alt"></i> Eilsson tech park</p>
+                    <a href="#">More info</a>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p> <i class="fas fa-map-marker-alt"></i> Eilsson tech park</p>
+                    <a href="#">More info</a>
+                </div>
+            </div>
+
+            <div class="side-bar-title">
+                <h4>Advertisment</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="images/advertisement.png" class="sidebar-ads" alt="advertisement">
+
+            <div class="side-bar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png" alt="member-1">
+                </div>
+                <p>Amr Mohsen</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png" alt="member-1">
+                </div>
+                <p>kareem Mohsen</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png" alt="member-1">
+                </div>
+                <p>khaled Mohsen</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright 2021 - Amr Mohsen </p>
+    </footer>
+</body>
+    <script src="script.js"></script>
+</html>
